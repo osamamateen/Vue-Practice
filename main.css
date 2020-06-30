@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.3em;
+  background-color: #288d6b;
+  color: #f2f2f2;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.vue {
+  margin: 20px;
+  text-align: center;
+  width: 50%;
+}
+input,
+textarea,
+p,
+div,
+section,
+article,
+select,
+button {
+  display: "block";
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0.35em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 20px;
+  text-align: center;
+}
+h4 {
+  padding: 1em 1em;
+  background-color: #024268;
+}
+li {
+  background-color: #247e60;
+}
+li:nth-child(even) {
+  background-color: #1e6950;
+}
+li,
+a {
+  padding: 5px 5px;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.done {
+  text-decoration: line-through;
+}
+
+.bag-health {
+  width: 200px;
+  border: 2px solid #000;
+  margin: 0 auto;
+}
+
+.bag-health div {
+  margin: 0;
+  height: 20px;
+  background: crimson;
+}
+
+.controls button {
+  margin: 0;
+  display: inline;
+  width: 98px;
+}

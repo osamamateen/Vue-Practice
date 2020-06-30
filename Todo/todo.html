@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script src="https://unpkg.com/vue"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <center>
+        <img class="vue" src="../vue.png" alt="" />
+      </center>
+      <div>
+        <h4>Todo List</h4>
+        <form v-on:submit.prevent="addnew()">
+          <input type="text" v-model="newTodo" required />
+          <button type="submit">Add</button>
+        </form>
+
+        <ul>
+          <li
+            v-for="(todo,index) in todos"
+            :key="todo.title"
+            v-bind:class="{done : todo.done}"
+          >
+            <span @dblclick="remove(todo)" @click="todo.done = !todo.done"
+              >{{todo.title}}</span
+            >
+          </li>
+        </ul>
+      </div>
+      <a href="../Punch game/punchgame.html">Go to next</a>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

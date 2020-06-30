@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script src="https://unpkg.com/vue"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <img class="vue" src="../vue.png" alt="" />
+    </center>
+
+    <div id="root">
+      <input type="text" ref="text" />
+      <button @click="readRefs">Click</button>
+      <p>Output: {{output}}</p>
+
+      <div ref="test"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

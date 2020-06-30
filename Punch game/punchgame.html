@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <script src="https://unpkg.com/vue"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <img class="vue" src="../vue.png" alt="" />
+    </center>
+    <div id="root">
+      <div class="bag">
+        <center>
+          <img src="punchbag.png" style="width: 35%;" v-show="!ended" />
+          <img src="punchburst.png" style="width: 35%;" v-show="ended" />
+        </center>
+      </div>
+      <div class="bag-health">
+        <div v-bind:style="{width: health + '%'}"></div>
+      </div>
+
+      <div class="controls">
+        <center>
+          <button v-on:click="punch" v-show="!ended">Punch</button>
+          <button @click="restart">Restart</button>
+        </center>
+      </div>
+    </div>
+
+    <br />
+    <a href="../Todo/todo.html">Go to prev</a>
+
+    <script src="punch.js"></script>
+  </body>
+</html>
